@@ -11,7 +11,7 @@
 
 - Antes de cargar
 
-<img width="1237" height="889" alt="Captura de pantalla 2025-10-13 160143" src="https://github.com/user-attachments/assets/4096e81e-d875-45a4-ab1d-0eadb6cf5b97" />
+<img width="1237" height="889" alt="Captura de pantalla 2025-10-13 160143" src="https://github.com/user-attachments/assets/4096e81e-d875-45a4-ab1d-0eadb6cf5b97" /> <br>
 
 - Cargada las fotos
 
