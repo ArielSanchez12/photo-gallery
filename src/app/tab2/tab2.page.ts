@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PhotoService } from '../services/photo';
 
 @Component({
   selector: 'app-tab2',
@@ -8,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(public photoService: PhotoService) { }
 
+  //Se ejecuta cada vez que regreso a la pestaña para mostrar las fotos guardadas
+  async ionViewWillEnter() {
+    await this.photoService.loadSaved();
+  }
+
+  addPhotoToGallery() {
+    this.photoService.addNewToGallery();
+  }
 }
