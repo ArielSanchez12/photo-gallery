@@ -13,5 +13,25 @@
     </ion-toolbar>
   </ion-header>
 
+
+
+  <ion-card *ngIf="location">
+    <ion-card-header>
+      <ion-card-title>Tu ubicación actual</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Latitud: {{location.latitude}}</p>
+      <p>Longitud: {{location.longitude}}</p>
+    </ion-card-content>
+  </ion-card>
+
+    <ion-content>
+    <ion-fab vertical="top" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="getCurrentLocation()">
+        <ion-icon name="earth-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
+
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
